@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-uvm
+fuzzy_if.sv
+fuzzy_transaction.sv
+fuzzy_driver.sv

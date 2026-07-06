@@ -1,0 +1,8 @@
+#e1(06Jul2026:12:21:06): source ./xcelium.d/env.d/env.history.06Jul2026_12_21_06
+s1(06Jul2026:12:21:06):  xrun rtl.sv 
+#e2(06Jul2026:12:21:20): source ./xcelium.d/env.d/env.history.06Jul2026_12_21_20
+s2(06Jul2026:12:21:20):  xrun rtl.sv 
+#e3(06Jul2026:12:21:31): source ./xcelium.d/env.d/env.history.06Jul2026_12_21_31
+s3(06Jul2026:12:21:31):  xrun rtl.sv 
+#e4(06Jul2026:12:21:46): source ./xcelium.d/env.d/env.history.06Jul2026_12_21_46
+s4(06Jul2026:12:21:46):  xrun rtl.sv 

@@ -1,0 +1,54 @@
+===============================
+Fuzzy Branch Predictor Rules
+===============================
+
+Inputs:
+-------
+History:
+    Low    = 0 - 30
+    Medium = 31 - 69
+    High   = 70 - 100
+
+Frequency:
+    Low    = 0 - 30
+    Medium = 31 - 69
+    High   = 70 - 100
+
+Reason:
+    0 = Error Check
+    1 = IF Statement
+    2 = Loop
+
+Output:
+-------
+0 = Not Taken
+1 = Taken
+
+===============================
+Rules
+===============================
+
+Rule 1:
+IF History is High
+AND Reason is Loop
+THEN Prediction = Taken
+
+Rule 2:
+IF History is Low
+AND Reason is Error Check
+THEN Prediction = Not Taken
+
+Rule 3:
+IF History is High
+AND Frequency is High
+THEN Prediction = Taken
+
+Rule 4:
+IF History is Medium
+AND Reason is IF Statement
+THEN Prediction = Taken
+
+Rule 5:
+IF History is Low
+AND Frequency is Low
+THEN Prediction = Not Taken

@@ -1,0 +1,20 @@
+#e1(06Jul2026:12:25:11): source ./xcelium.d/env.d/env.history.06Jul2026_12_25_11
+s1(06Jul2026:12:25:11):  xrun test.sv 
+#e2(06Jul2026:12:25:31): source ./xcelium.d/env.d/env.history.06Jul2026_12_25_31
+s2(06Jul2026:12:25:31):  xrun test.sv 
+#e3(06Jul2026:12:26:36): source ./xcelium.d/env.d/env.history.06Jul2026_12_26_36
+s3(06Jul2026:12:26:36):  xrun test.sv 
+#e4(06Jul2026:12:26:53): source ./xcelium.d/env.d/env.history.06Jul2026_12_26_53
+s4(06Jul2026:12:26:53):  xrun ../rtl/design.sv test.sv 
+#e5(06Jul2026:12:27:01): source ./xcelium.d/env.d/env.history.06Jul2026_12_27_01
+s5(06Jul2026:12:27:01):  xrun ../rtl/rtl.sv test.sv 
+#e6(06Jul2026:12:28:38): source ./xcelium.d/env.d/env.history.06Jul2026_12_28_38
+s6(06Jul2026:12:28:38):  xrun test.sv 
+#e7(06Jul2026:12:29:36): source ./xcelium.d/env.d/env.history.06Jul2026_12_29_36
+s7(06Jul2026:12:29:36):  xrun ../rtl/rtl.sv test.sv 
+#e8(06Jul2026:12:31:43): source ./xcelium.d/env.d/env.history.06Jul2026_12_31_43
+s8(06Jul2026:12:31:43):  xrun ../rtl/rtl.sv test.sv 
+#e9(06Jul2026:14:09:59): source ./xcelium.d/env.d/env.history.06Jul2026_14_09_59
+s9(06Jul2026:14:09:59):  xrun -gui ../rtl/design.sv test.sv 
+#e10(06Jul2026:14:10:12): source ./xcelium.d/env.d/env.history.06Jul2026_14_10_12
+s10(06Jul2026:14:10:12):  xrun -gui ../rtl/rtl.sv test.sv 

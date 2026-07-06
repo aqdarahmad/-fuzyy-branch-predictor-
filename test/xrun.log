@@ -1,0 +1,13 @@
+xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.03-s006: Started on Jul 06, 2026 at 14:10:12 EEST
+xrun
+	-gui
+	../rtl/rtl.sv
+	test.sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/xcelium/files/xmsimrc
+xcelium> TOOL:	xrun(64)	25.03-s006: Exiting on Jul 06, 2026 at 14:34:51 EEST  (total: 00:24:39)
