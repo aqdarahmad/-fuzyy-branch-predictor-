@@ -5,3 +5,5 @@
 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_if.sv
 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_transaction.sv
 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_driver.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_monitor.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_scoreboard.sv

@@ -1,5 +1,12 @@
-1783337001 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_if.sv
+1783378846 /home/Trainee23/fuzyy-branch-predictor/uvm/top.sv
+1783351941 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_if.sv
 1783337001 /home/Trainee23/fuzyy-branch-predictor/uvm/interface.sv
-1783351455 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_driver.sv
+1783351941 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_driver.sv
+1783376250 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_scoreboard.sv
 1783337671 /home/Trainee23/fuzyy-branch-predictor/uvm/transaction.sv
-1783351376 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_transaction.sv
+1783378807 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_test.sv
+1783351941 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_transaction.sv
+1783351941 /home/Trainee23/fuzyy-branch-predictor/rtl/rtl.sv
+1783376182 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_monitor.sv
+1783378728 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_env.sv
+1783378683 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_agent.sv

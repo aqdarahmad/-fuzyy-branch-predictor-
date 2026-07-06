@@ -19,3 +19,6 @@ s14::(06Jul2026:18:24:17):( xrun interface.sv fuzzy_transaction.sv fuzzy_driver.
 s15::(06Jul2026:18:25:26):( xrun fuzzy_if.sv fuzzy_transaction.sv fuzzy_driver.sv )&&(./xcelium.d/env.d/env.history.06Jul2026_18_25_26)
 s16::(06Jul2026:18:25:33):( xrun fuzzy_if.sv fuzzy_transaction.sv fuzzy_driver.sv )&&(./xcelium.d/env.d/env.history.06Jul2026_18_25_33)
 s17::(06Jul2026:18:26:07):( xrun -uvm fuzzy_if.sv fuzzy_transaction.sv fuzzy_driver.sv )&&(./xcelium.d/env.d/env.history.06Jul2026_18_26_07)
+s18::(07Jul2026:01:56:20):( xrun -uvm fuzzy_if.sv fuzzy_transaction.sv fuzzy_driver.sv fuzzy_monitor.sv fuzzy_scoreboard.sv )&&(./xcelium.d/env.d/env.history.07Jul2026_01_56_20)
+s19::(07Jul2026:02:01:58):( xrun -uvm ../rtl/rtl.sv fuzzy_if.sv fuzzy_transaction.sv fuzzy_driver.sv fuzzy_monitor.sv fuzzy_scoreboard.sv fuzzy_env.sv fuzzy_agent.sv fuzzy_test.sv top.sv )&&(./xcelium.d/env.d/env.history.07Jul2026_02_01_58)
+s20::(07Jul2026:02:02:41):( xrun -uvm ../rtl/rtl.sv fuzzy_if.sv fuzzy_transaction.sv fuzzy_driver.sv fuzzy_monitor.sv fuzzy_scoreboard.sv fuzzy_env.sv fuzzy_agent.sv fuzzy_test.sv top.sv )&&(./xcelium.d/env.d/env.history.07Jul2026_02_02_41)
