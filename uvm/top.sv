@@ -21,7 +21,8 @@ module top;
 
         uvm_config_db#(virtual fuzzy_if)::set(null,"*","vif",vif);
 
-        run_test("fuzzy_test");
+      //  run_test("fuzzy_test");
+        run_test("regression_test");
 
     end
 

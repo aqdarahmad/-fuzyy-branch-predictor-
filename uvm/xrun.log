@@ -1,27 +1,24 @@
 xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	25.03-s006: Started on Jul 07, 2026 at 16:23:47 EEST
+TOOL:	xrun(64)	25.03-s006: Started on Jul 07, 2026 at 16:50:58 EEST
 xrun
 	-uvm
-	../rtl/rtl.sv
 	fuzzy_if.sv
 	fuzzy_transaction.sv
 	fuzzy_sequence.sv
+	regression_sequence.sv
 	fuzzy_driver.sv
 	fuzzy_monitor.sv
 	fuzzy_scoreboard.sv
 	fuzzy_agent.sv
 	fuzzy_env.sv
+	regression_test.sv
 	fuzzy_test.sv
 	top.sv
-Recompiling... reason: file './fuzzy_test.sv' is newer than expected.
-	expected: Tue Jul  7 02:00:07 2026
-	actual:   Tue Jul  7 16:23:45 2026
+Recompiling... reason: file './regression_sequence.sv' is newer than expected.
+	expected: Tue Jul  7 16:44:19 2026
+	actual:   Tue Jul  7 16:50:51 2026
 Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d
-file: ../rtl/rtl.sv
-module design(
-            |
-xmvlog: *W,CFGKWD (../rtl/rtl.sv,6|12): A Verilog config keyword was found where an identifier was expected.
-file: fuzzy_test.sv
+file: regression_sequence.sv
 file: top.sv
     design dut(
          |
@@ -33,27 +30,23 @@ xmvlog: *W,FUNTSK (fuzzy_monitor.sv,22|36): function called as a task without vo
 		errors: 0, warnings: 1
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
 	Top level design units:
 		uvm_pkg
 		cdns_uvmapi
 		cdns_assert2uvm_pkg
 		cdns_uvm_pkg
+		$unit_0x65106824
 		$unit_0x6464a06d
 		top
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.design:sv <0x5a3b70ad>
+		worklib.design:sv <0x18532ad5>
 			streams:   1, words:  2352
-		worklib.fuzzy_if:sv <0x08cdfb09>
-			streams: 509, words: 536908
-		worklib.cdns_uvm_pkg:sv <0x29ace8ec>
-			streams: 172, words: 242151
-		worklib.cdns_uvmapi:svp <0x60cdb972>
-			streams:  27, words: 28330
-		worklib.cdns_assert2uvm_pkg:sv <0x342cc8ca>
-			streams:   3, words:  1590
-		worklib.uvm_pkg:sv <0x659cbc3c>
-			streams: 4534, words: 6729971
+		worklib.\$unit_0x6464a06d :compilation_unit <0x3d6c86b6>
+			streams: 450, words: 462837
+		worklib.fuzzy_if:sv <0x5c12c413>
+			streams: 554, words: 584010
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -61,18 +54,18 @@ xmvlog: *W,FUNTSK (fuzzy_monitor.sv,22|36): function called as a task without vo
 		Modules:                        2       2
 		Interfaces:                     1       1
 		Verilog packages:               4       4
-		Registers:                 13,765  10,150
+		Registers:                 14,665  10,314
 		Scalar wires:                   2       -
 		Vectored wires:                 3       -
 		Named events:                   4      12
 		Always blocks:                  1       1
-		Initial blocks:               279     153
+		Initial blocks:               313     163
 		Parallel blocks:               26      27
 		Pseudo assignments:             4       -
-		Assertions:                     2       2
-		Compilation units:              1       1
-		SV Class declarations:        197     311
-		SV Class specializations:     379     379
+		Assertions:                     3       3
+		Compilation units:              2       2
+		SV Class declarations:        207     321
+		SV Class specializations:     421     421
 		Simulation timescale:         1ps
 	Writing initial simulation snapshot: worklib.top:sv
 Loading snapshot worklib.top:sv .................... Done
@@ -100,15 +93,184 @@ CDNS-UVM-1.1d (25.03-s006)
 
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
-UVM_INFO @ 0: reporter [RNTST] Running test fuzzy_test...
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_driver' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_monitor' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_scoreboard' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_agent' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_env' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_test' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_transaction' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_WARNING @ 0: reporter [TPRGED] Type name 'fuzzy_sequence' already registered with factory. No string-based lookup support for multiple types with the same type name.
+UVM_INFO @ 0: reporter [RNTST] Running test regression_test...
 history=x freq=x reason=x score=0 prediction=0
-history=80 freq=70 reason=2 score=70 prediction=1
-UVM_INFO fuzzy_scoreboard.sv(23) @ 10000: uvm_test_top.env.sb [SCOREBOARD] History=80 Frequency=70 Reason=2 Prediction=1
-history=30 freq=20 reason=0 score=-70 prediction=0
-UVM_INFO fuzzy_scoreboard.sv(23) @ 20000: uvm_test_top.env.sb [SCOREBOARD] History=30 Frequency=20 Reason=0 Prediction=0
-history=60 freq=80 reason=1 score=50 prediction=1
-UVM_INFO fuzzy_scoreboard.sv(23) @ 30000: uvm_test_top.env.sb [SCOREBOARD] History=60 Frequency=80 Reason=1 Prediction=1
-UVM_INFO /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 30000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+history=70 freq=10 reason=2 score=40 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 10000: uvm_test_top.env.sb [SCOREBOARD] History=70 Frequency=10 Reason=2 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 10000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 1
+-----------------------------
+ History    : 70
+ Frequency  : 10
+ Reason     : 2
+ Expected   : 1
+=============================
+history=80 freq=50 reason=2 score=40 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 20000: uvm_test_top.env.sb [SCOREBOARD] History=80 Frequency=50 Reason=2 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 20000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 2
+-----------------------------
+ History    : 80
+ Frequency  : 50
+ Reason     : 2
+ Expected   : 1
+=============================
+history=100 freq=100 reason=2 score=70 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 30000: uvm_test_top.env.sb [SCOREBOARD] History=100 Frequency=100 Reason=2 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 30000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 3
+-----------------------------
+ History    : 100
+ Frequency  : 100
+ Reason     : 2
+ Expected   : 1
+=============================
+history=0 freq=80 reason=0 score=-40 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 40000: uvm_test_top.env.sb [SCOREBOARD] History=0 Frequency=80 Reason=0 Prediction=0
+UVM_INFO regression_sequence.sv(68) @ 40000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 4
+-----------------------------
+ History    : 0
+ Frequency  : 80
+ Reason     : 0
+ Expected   : 0
+=============================
+history=20 freq=50 reason=0 score=-40 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 50000: uvm_test_top.env.sb [SCOREBOARD] History=20 Frequency=50 Reason=0 Prediction=0
+UVM_INFO regression_sequence.sv(68) @ 50000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 5
+-----------------------------
+ History    : 20
+ Frequency  : 50
+ Reason     : 0
+ Expected   : 0
+=============================
+history=30 freq=100 reason=0 score=-40 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 60000: uvm_test_top.env.sb [SCOREBOARD] History=30 Frequency=100 Reason=0 Prediction=0
+UVM_INFO regression_sequence.sv(68) @ 60000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 6
+-----------------------------
+ History    : 30
+ Frequency  : 100
+ Reason     : 0
+ Expected   : 0
+=============================
+history=70 freq=70 reason=0 score=30 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 70000: uvm_test_top.env.sb [SCOREBOARD] History=70 Frequency=70 Reason=0 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 70000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 7
+-----------------------------
+ History    : 70
+ Frequency  : 70
+ Reason     : 0
+ Expected   : 1
+=============================
+history=85 freq=90 reason=1 score=30 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 80000: uvm_test_top.env.sb [SCOREBOARD] History=85 Frequency=90 Reason=1 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 80000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 8
+-----------------------------
+ History    : 85
+ Frequency  : 90
+ Reason     : 1
+ Expected   : 1
+=============================
+history=100 freq=100 reason=2 score=70 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 90000: uvm_test_top.env.sb [SCOREBOARD] History=100 Frequency=100 Reason=2 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 90000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 9
+-----------------------------
+ History    : 100
+ Frequency  : 100
+ Reason     : 2
+ Expected   : 1
+=============================
+history=31 freq=20 reason=1 score=-30 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 100000: uvm_test_top.env.sb [SCOREBOARD] History=31 Frequency=20 Reason=1 Prediction=0
+UVM_INFO regression_sequence.sv(68) @ 100000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 10
+-----------------------------
+ History    : 31
+ Frequency  : 20
+ Reason     : 1
+ Expected   : 1
+=============================
+history=50 freq=50 reason=1 score=20 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 110000: uvm_test_top.env.sb [SCOREBOARD] History=50 Frequency=50 Reason=1 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 110000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 11
+-----------------------------
+ History    : 50
+ Frequency  : 50
+ Reason     : 1
+ Expected   : 1
+=============================
+history=69 freq=80 reason=1 score=50 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 120000: uvm_test_top.env.sb [SCOREBOARD] History=69 Frequency=80 Reason=1 Prediction=1
+UVM_INFO regression_sequence.sv(68) @ 120000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 12
+-----------------------------
+ History    : 69
+ Frequency  : 80
+ Reason     : 1
+ Expected   : 1
+=============================
+history=0 freq=0 reason=2 score=-30 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 130000: uvm_test_top.env.sb [SCOREBOARD] History=0 Frequency=0 Reason=2 Prediction=0
+UVM_INFO regression_sequence.sv(68) @ 130000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 13
+-----------------------------
+ History    : 0
+ Frequency  : 0
+ Reason     : 2
+ Expected   : 0
+=============================
+history=20 freq=10 reason=1 score=-30 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 140000: uvm_test_top.env.sb [SCOREBOARD] History=20 Frequency=10 Reason=1 Prediction=0
+UVM_INFO regression_sequence.sv(68) @ 140000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 14
+-----------------------------
+ History    : 20
+ Frequency  : 10
+ Reason     : 1
+ Expected   : 0
+=============================
+history=30 freq=30 reason=0 score=-70 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 150000: uvm_test_top.env.sb [SCOREBOARD] History=30 Frequency=30 Reason=0 Prediction=0
+UVM_INFO regression_sequence.sv(68) @ 150000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] 
+=============================
+ TEST CASE 15
+-----------------------------
+ History    : 30
+ Frequency  : 30
+ Reason     : 0
+ Expected   : 0
+=============================
+UVM_INFO regression_sequence.sv(148) @ 150000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] ==============================
+UVM_INFO regression_sequence.sv(155) @ 150000: uvm_test_top.env.agent.seqr@@seq [REGRESSION] Regression Testing Completed Successfully
+UVM_INFO /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 150000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 
 --- UVM Report catcher Summary ---
 
@@ -123,15 +285,17 @@ Number of caught UVM_WARNING reports :    0
 --- UVM Report Summary ---
 
 ** Report counts by severity
-UVM_INFO :    5
-UVM_WARNING :    0
+UVM_INFO :   34
+UVM_WARNING :    8
 UVM_ERROR :    0
 UVM_FATAL :    0
 ** Report counts by id
+[REGRESSION]    17
 [RNTST]     1
-[SCOREBOARD]     3
+[SCOREBOARD]    15
 [TEST_DONE]     1
-Simulation complete via $finish(1) at time 30 NS + 49
+[TPRGED]     8
+Simulation complete via $finish(1) at time 150 NS + 49
 /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
 xcelium> exit
-TOOL:	xrun(64)	25.03-s006: Exiting on Jul 07, 2026 at 16:23:51 EEST  (total: 00:00:04)
+TOOL:	xrun(64)	25.03-s006: Exiting on Jul 07, 2026 at 16:51:00 EEST  (total: 00:00:02)

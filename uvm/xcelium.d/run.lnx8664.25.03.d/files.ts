@@ -7,5 +7,7 @@
 1783378728 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_env.sv
 1783378683 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_agent.sv
 1783430625 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_test.sv
-1783378846 /home/Trainee23/fuzyy-branch-predictor/uvm/top.sv
-1783430538 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_sequence.sv
+1783431529 /home/Trainee23/fuzyy-branch-predictor/uvm/top.sv
+1783430735 /home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_sequence.sv
+1783431984 /home/Trainee23/fuzyy-branch-predictor/uvm/regression_test.sv
+1783432251 /home/Trainee23/fuzyy-branch-predictor/uvm/regression_sequence.sv
