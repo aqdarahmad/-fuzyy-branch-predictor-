@@ -1,120 +1,137 @@
 xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	25.03-s006: Started on Jul 07, 2026 at 02:02:41 EEST
+TOOL:	xrun(64)	25.03-s006: Started on Jul 07, 2026 at 16:23:47 EEST
 xrun
 	-uvm
 	../rtl/rtl.sv
 	fuzzy_if.sv
 	fuzzy_transaction.sv
+	fuzzy_sequence.sv
 	fuzzy_driver.sv
 	fuzzy_monitor.sv
 	fuzzy_scoreboard.sv
-	fuzzy_env.sv
 	fuzzy_agent.sv
+	fuzzy_env.sv
 	fuzzy_test.sv
 	top.sv
+Recompiling... reason: file './fuzzy_test.sv' is newer than expected.
+	expected: Tue Jul  7 02:00:07 2026
+	actual:   Tue Jul  7 16:23:45 2026
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d
 file: ../rtl/rtl.sv
 module design(
             |
 xmvlog: *W,CFGKWD (../rtl/rtl.sv,6|12): A Verilog config keyword was found where an identifier was expected.
-file: fuzzy_env.sv
-    fuzzy_agent agent;
-              |
-xmvlog: *E,NOIPRT (fuzzy_env.sv,8|14): Unrecognized declaration 'fuzzy_agent' of unknown type, which could be because of an unsupported keyword, a spelling mistake, non-visible type, or missing instance port list '()' [SystemVerilog].
-    fuzzy_scoreboard sb;
-                   |
-xmvlog: *E,NOIPRT (fuzzy_env.sv,10|19): Unrecognized declaration 'fuzzy_scoreboard' of unknown type, which could be because of an unsupported keyword, a spelling mistake, non-visible type, or missing instance port list '()' [SystemVerilog].
-    function new(string name,uvm_component parent);
-                                         |
-xmvlog: *E,EXPRPA (fuzzy_env.sv,12|41): expecting a right parenthesis (')') [A.2.6(IEEE)].
-    function new(string name,uvm_component parent);
-                                         |
-xmvlog: *E,NOIPRT (fuzzy_env.sv,12|41): Unrecognized declaration 'uvm_component' of unknown type, which could be because of an unsupported keyword, a spelling mistake, non-visible type, or missing instance port list '()' [SystemVerilog].
-    function new(string name,uvm_component parent);
-                                         |
-xmvlog: *E,NOTINF (fuzzy_env.sv,12|41): Interfaces are not allowed within tasks [SystemVerilog].
-    function new(string name,uvm_component parent);
-                                                 |
-xmvlog: *E,EXPSMC (fuzzy_env.sv,12|49): expecting a semicolon (';') [12.3.2(IEEE)].
-        super.new(name,parent);
-            |
-xmvlog: *E,EXPRPA (fuzzy_env.sv,14|12): expecting a right parenthesis (')') [A.2.6(IEEE)].
-    virtual function void build_phase(uvm_phase phase);
-                                              |
-xmvlog: *E,SVNOTY (fuzzy_env.sv,18|46): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    virtual function void connect_phase(uvm_phase phase);
-                                                |
-xmvlog: *E,SVNOTY (fuzzy_env.sv,26|48): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-file: fuzzy_agent.sv
-class fuzzy_agent extends uvm_agent;
-                                  |
-xmvlog: *E,SVNOTY (fuzzy_agent.sv,4|34): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    `uvm_component_utils(fuzzy_agent)
-                                    |
-xmvlog: *E,SVNOTY (fuzzy_agent.sv,6|36): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    `uvm_component_utils(fuzzy_agent)
-                                    |
-xmvlog: *E,SVEXTK (fuzzy_agent.sv,6|36): expecting a ';' (to terminate a type_declaration).
-    `uvm_component_utils(fuzzy_agent)
-                                    |
-xmvlog: *E,SVEXTK (fuzzy_agent.sv,6|36): expecting a ';' (to terminate a type_declaration).
-    `uvm_component_utils(fuzzy_agent)
-                                    |
-xmvlog: *E,SVNOTY (fuzzy_agent.sv,6|36): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    `uvm_component_utils(fuzzy_agent)
-                                    |
-xmvlog: *E,EXPSMC (fuzzy_agent.sv,6|36): expecting a semicolon (';') [10.3.1(IEEE)].
-    `uvm_component_utils(fuzzy_agent)
-                                    |
-xmvlog: *E,SVNOTY (fuzzy_agent.sv,6|36): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    `uvm_component_utils(fuzzy_agent)
-                                    |
-xmvlog: *E,EXPSMC (fuzzy_agent.sv,6|36): expecting a semicolon (';') [10.3.1(IEEE)].
-    fuzzy_driver driver;
-               |
-xmvlog: *E,NOIPRT (fuzzy_agent.sv,8|15): Unrecognized declaration 'fuzzy_driver' of unknown type, which could be because of an unsupported keyword, a spelling mistake, non-visible type, or missing instance port list '()' [SystemVerilog].
-    uvm_sequencer #(fuzzy_transaction) seqr;
-                |
-xmvlog: *E,EXPENC (fuzzy_agent.sv,10|16): Expecting the keyword 'endclass'.
-    function new(string name,uvm_component parent);
-               |
-xmvlog: *E,NEWOIC (fuzzy_agent.sv,14|15): The class constructor method 'new' is only allowed within a class declaration.
-    function new(string name,uvm_component parent);
-                                         |
-xmvlog: *E,EXPRPA (fuzzy_agent.sv,14|41): expecting a right parenthesis (')') [A.2.6(IEEE)].
-    function new(string name,uvm_component parent);
-                                         |
-xmvlog: *E,NOIPRT (fuzzy_agent.sv,14|41): Unrecognized declaration 'uvm_component' of unknown type, which could be because of an unsupported keyword, a spelling mistake, non-visible type, or missing instance port list '()' [SystemVerilog].
-    function new(string name,uvm_component parent);
-                                         |
-xmvlog: *E,NOTINF (fuzzy_agent.sv,14|41): Interfaces are not allowed within tasks [SystemVerilog].
-    function new(string name,uvm_component parent);
-                                                 |
-xmvlog: *E,EXPSMC (fuzzy_agent.sv,14|49): expecting a semicolon (';') [12.3.2(IEEE)].
-        super.new(name,parent);
-            |
-xmvlog: *E,EXPRPA (fuzzy_agent.sv,16|12): expecting a right parenthesis (')') [A.2.6(IEEE)].
-    virtual function void build_phase(uvm_phase phase);
-                   |
-xmvlog: *E,BADQAL (fuzzy_agent.sv,20|19): Lifetime or qualifier(s) 'virtual' not allowed before function declaration.
-    virtual function void build_phase(uvm_phase phase);
-                                              |
-xmvlog: *E,SVNOTY (fuzzy_agent.sv,20|46): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-    virtual function void connect_phase(uvm_phase phase);
-                   |
-xmvlog: *E,BADQAL (fuzzy_agent.sv,30|19): Lifetime or qualifier(s) 'virtual' not allowed before function declaration.
-    virtual function void connect_phase(uvm_phase phase);
-                                                |
-xmvlog: *E,SVNOTY (fuzzy_agent.sv,30|48): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
-endclass
-       |
-xmvlog: *E,MPANDC (fuzzy_agent.sv,36|7): expecting the keyword 'module', 'macromodule', 'primitive', 'connectmodule','connect', 'discipline' or 'nature' [A.1].
+file: fuzzy_test.sv
 file: top.sv
     design dut(
          |
 xmvlog: *W,CFGKWD (top.sv,11|9): A Verilog config keyword was found where an identifier was expected.
-	module worklib.top:sv
-		errors: 0, warnings: 1
+uvm_config_db#(virtual fuzzy_if)::get(this,"","vif",vif);
+                                    |
+xmvlog: *W,FUNTSK (fuzzy_monitor.sv,22|36): function called as a task without void'().
 	Total errors/warnings found outside modules and primitives:
-		errors: 30, warnings: 0
-xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
-TOOL:	xrun(64)	25.03-s006: Exiting on Jul 07, 2026 at 02:02:41 EEST  (total: 00:00:00)
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		$unit_0x6464a06d
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.design:sv <0x5a3b70ad>
+			streams:   1, words:  2352
+		worklib.fuzzy_if:sv <0x08cdfb09>
+			streams: 509, words: 536908
+		worklib.cdns_uvm_pkg:sv <0x29ace8ec>
+			streams: 172, words: 242151
+		worklib.cdns_uvmapi:svp <0x60cdb972>
+			streams:  27, words: 28330
+		worklib.cdns_assert2uvm_pkg:sv <0x342cc8ca>
+			streams:   3, words:  1590
+		worklib.uvm_pkg:sv <0x659cbc3c>
+			streams: 4534, words: 6729971
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                        Instances  Unique
+		Modules:                        2       2
+		Interfaces:                     1       1
+		Verilog packages:               4       4
+		Registers:                 13,765  10,150
+		Scalar wires:                   2       -
+		Vectored wires:                 3       -
+		Named events:                   4      12
+		Always blocks:                  1       1
+		Initial blocks:               279     153
+		Parallel blocks:               26      27
+		Pseudo assignments:             4       -
+		Assertions:                     2       2
+		Compilation units:              1       1
+		SV Class declarations:        197     311
+		SV Class specializations:     379     379
+		Simulation timescale:         1ps
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/xcelium/files/xmsimrc
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (25.03-s006)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test fuzzy_test...
+history=x freq=x reason=x score=0 prediction=0
+history=80 freq=70 reason=2 score=70 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 10000: uvm_test_top.env.sb [SCOREBOARD] History=80 Frequency=70 Reason=2 Prediction=1
+history=30 freq=20 reason=0 score=-70 prediction=0
+UVM_INFO fuzzy_scoreboard.sv(23) @ 20000: uvm_test_top.env.sb [SCOREBOARD] History=30 Frequency=20 Reason=0 Prediction=0
+history=60 freq=80 reason=1 score=50 prediction=1
+UVM_INFO fuzzy_scoreboard.sv(23) @ 30000: uvm_test_top.env.sb [SCOREBOARD] History=60 Frequency=80 Reason=1 Prediction=1
+UVM_INFO /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 30000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    5
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SCOREBOARD]     3
+[TEST_DONE]     1
+Simulation complete via $finish(1) at time 30 NS + 49
+/usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	25.03-s006: Exiting on Jul 07, 2026 at 16:23:51 EEST  (total: 00:00:04)
