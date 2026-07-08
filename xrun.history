@@ -1,0 +1,8 @@
+#e1(09Jul2026:00:24:02): source ./xcelium.d/env.d/env.history.09Jul2026_00_24_02
+s1(09Jul2026:00:24:02):  xrun uvm/top.sv uvm/fuzzy_agent.sv uvm/fuzzy_driver.sv uvm/fuzzy_env.sv uvm/fuzzy_if.sv uvm/fuzzy_monitor.sv uvm/fuzzy_scoreboard.sv uvm/fuzzy_sequence.sv uvm/fuzzy_test.sv uvm/fuzzy_transaction.sv uvm/regression_sequence.sv uvm/regression_test.sv uvm/top.sv smoke_sequence.sv smoke_test.sv +UVM_TESTNAME=smoke_test 
+#e2(09Jul2026:00:27:03): source ./xcelium.d/env.d/env.history.09Jul2026_00_27_03
+s2(09Jul2026:00:27:03):  xrun -f run.f +UVM_TESTNAME=smoke_test 
+#e3(09Jul2026:00:31:08): source ./xcelium.d/env.d/env.history.09Jul2026_00_31_08
+s3(09Jul2026:00:31:08):  xrun -f run.f +UVM_TESTNAME=smoke_test 
+#e4(09Jul2026:00:33:22): source ./xcelium.d/env.d/env.history.09Jul2026_00_33_22
+s4(09Jul2026:00:33:22):  xrun -f run.f +UVM_TESTNAME=smoke_test 

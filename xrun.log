@@ -1,0 +1,140 @@
+xrun(64): 25.03-s006: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.03-s006: Started on Jul 09, 2026 at 00:33:21 EEST
+xrun
+	-f run.f
+		rtl/rtl.sv
+		uvm/fuzzy_if.sv
+		uvm/fuzzy_transaction.sv
+		uvm/fuzzy_sequence.sv
+		uvm/fuzzy_driver.sv
+		uvm/fuzzy_monitor.sv
+		uvm/fuzzy_scoreboard.sv
+		uvm/fuzzy_agent.sv
+		uvm/fuzzy_env.sv
+		uvm/fuzzy_test.sv
+		uvm/regression_sequence.sv
+		uvm/regression_test.sv
+		smoke_sequence.sv
+		smoke_test.sv
+		uvm/top.sv
+	+UVM_TESTNAME=smoke_test
+file: rtl/rtl.sv
+module design(
+            |
+xmvlog: *W,CFGKWD (rtl/rtl.sv,6|12): A Verilog config keyword was found where an identifier was expected.
+	module worklib.design:sv
+		errors: 0, warnings: 1
+file: uvm/fuzzy_if.sv
+	interface worklib.fuzzy_if:sv
+		errors: 0, warnings: 0
+file: uvm/top.sv
+    design dut(
+         |
+xmvlog: *W,CFGKWD (uvm/top.sv,11|9): A Verilog config keyword was found where an identifier was expected.
+	module worklib.top:sv
+		errors: 0, warnings: 1
+uvm_config_db#(virtual fuzzy_if)::get(this,"","vif",vif);
+                                    |
+xmvlog: *W,FUNTSK (uvm/fuzzy_monitor.sv,22|36): function called as a task without void'().
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		$unit_0x7411e427
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.design:sv <0x5e1a3bd1>
+			streams:   1, words:  2352
+		worklib.fuzzy_if:sv <0x4f4bd691>
+			streams: 597, words: 618547
+		worklib.cdns_uvm_pkg:sv <0x29ace8ec>
+			streams: 172, words: 242151
+		worklib.cdns_uvmapi:svp <0x60cdb972>
+			streams:  27, words: 28330
+		worklib.cdns_assert2uvm_pkg:sv <0x342cc8ca>
+			streams:   3, words:  1590
+		worklib.uvm_pkg:sv <0x659cbc3c>
+			streams: 4534, words: 6729971
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                        Instances  Unique
+		Modules:                        2       2
+		Interfaces:                     1       1
+		Verilog packages:               4       4
+		Registers:                 13,937  10,221
+		Scalar wires:                   2       -
+		Vectored wires:                 3       -
+		Named events:                   4      12
+		Always blocks:                  1       1
+		Initial blocks:               291     157
+		Parallel blocks:               26      27
+		Pseudo assignments:             4       -
+		Assertions:                     3       3
+		Compilation units:              1       1
+		SV Class declarations:        201     315
+		SV Class specializations:     387     387
+		Simulation timescale:         1ps
+	Writing initial simulation snapshot: worklib.top:sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/xcelium/files/xmsimrc
+xcelium> source /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (25.03-s006)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test smoke_test...
+history=x freq=x reason=x score=0 prediction=0
+history=128 freq=64 reason=1 score=30 prediction=1
+UVM_INFO uvm/fuzzy_scoreboard.sv(23) @ 10000: uvm_test_top.env.sb [SCOREBOARD] History=128 Frequency=64 Reason=1 Prediction=1
+UVM_INFO /usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 10000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    3
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SCOREBOARD]     1
+[TEST_DONE]     1
+Simulation complete via $finish(1) at time 10 NS + 49
+/usr/cadence/installs/XCELIUM2503/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	25.03-s006: Exiting on Jul 09, 2026 at 00:33:25 EEST  (total: 00:00:04)

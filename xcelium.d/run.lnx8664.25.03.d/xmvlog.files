@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/Trainee23/fuzyy-branch-predictor/rtl/rtl.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_if.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_transaction.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_sequence.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_driver.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_monitor.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_scoreboard.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_agent.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_env.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/fuzzy_test.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/regression_sequence.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/regression_test.sv
+/home/Trainee23/fuzyy-branch-predictor/smoke_sequence.sv
+/home/Trainee23/fuzyy-branch-predictor/smoke_test.sv
+/home/Trainee23/fuzyy-branch-predictor/uvm/top.sv
